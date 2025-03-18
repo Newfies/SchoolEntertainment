@@ -1,0 +1,11 @@
+[INFO] 4:04:40 PM | Server is running on port 1234
+[INFO] 4:04:41 PM | Make Custom Changes To NewfiesJS By Using njs.config(setting, value)
+[INFO] 4:04:41 PM | You can hide these messages by using njs.config('reminderConfig', false)
+[INFO] 4:04:58 PM | Server is running on port 1234
+[INFO] 4:21:14 PM | Server is running on port 1234
+[INFO] 4:22:54 PM | Server is running on port 1234
+[INFO] 4:23:57 PM | Server is running on port 1234
+[INFO] 4:25:49 PM | Server is running on port 1234
+[INFO] 4:28:13 PM | Server is running on port 1234
+[INFO] 4:28:50 PM | Server is running on port 1234
+[INFO] 4:29:41 PM | Server is running on port 1234

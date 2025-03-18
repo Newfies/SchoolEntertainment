@@ -1,0 +1,21 @@
+<html>
+
+    <head>
+        <title>Title</title>
+        <link rel="icon" sizes="512x512" href="https://placehold.co/512/black/white/png?text=Fav">
+        <link rel="stylesheet" href="https://cdn.statically.io/gh/GsLibrary/Library/main/Fonts.css">
+        <link rel="stylesheet" href="_home/style.css">
+    </head>
+
+    <body>
+        <% games.forEach(function(game) { %>
+            <div>
+                <h1><%= game.name %></h1>
+                <img src="<%= game.logo %>" alt="<%= game.name %> logo">
+              </div>              
+          <% }) %>
+         
+        <script src="_home/script.js"></script>
+    </body>
+
+</html>
