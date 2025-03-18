@@ -66,7 +66,7 @@ app.get('/home', function(req, res) {
           if (config['Loading Configurations']) {
             const game = {
               name: config['Loading Configurations'].Name || 'Unnamed Option',
-              logo: '/options/' + dir + '/logo.png', // Correct path to the logo file
+              logo: '/options/' + dir + '/' + config['Loading Configurations'].Logo, // Correct path to the logo file
             };
   
             gamesData.push(game);
@@ -84,9 +84,6 @@ app.get('/home', function(req, res) {
   
   
 
-app.get('*', function(req, res) {
-    res.redirect("/home");
-});
 
 app.listen(port, () => {
     njs.njsLog(`Server is running on port ${port}`);

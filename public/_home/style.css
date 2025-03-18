@@ -1,34 +1,109 @@
-/* Root is where im storing variables. This is for things like fonts, colors, etc. */
-/* Use the fonts by setting the value to var(--VARIABLE) */
-:root {
-    /* Night Mode Themed Colors */
-    --NM1: #1A1A1A;
-    --NM2: #242424;
-    --NM3: #2E2E2E;
-    --NM4: #383838;
-    --NM5: #444444;
-    --NM6: #5C5C5C;
-    --NM7: #787878;
-    /* Font's Imported With GsLibrary */
-    --F-Onest: 'Onest';
-    --F-Rubik: 'Rubik';
-    --F-Ubuntu: 'Ubuntu';
-    --F-Lato: 'Lato';
-    --F-Anton: 'Anton';
-    --F-Oswald: 'Oswald';
-    --F-LuckiestGuy: 'Luckiest Guy';
-    --F-UbuntuTitlingBold: 'Ubuntu Titling Bold';
-    /* I Have Purchased A License To Use This For Commercial Purposes, But If You Haven't, Please Don't Use It For Commercial Purposes. */
-    --F-OnelySans: 'OnelySans';
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-* {
-    user-select: none;
-    cursor: auto;
+@font-face {
+    font-family: 'CustomFont'; /* You can name the font whatever you want */
+    src: url('res/fonts/ModifiedFont2.tff') format('truetype'); /* Path to the font file */
+}
+
+.key {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--NM1);
-    color: white;
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option {
+    flex: 1 1 20%;
+    max-width: 20%;
+    min-width: 150px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.option img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.title {
+    margin: 10px 0 0;
+    font-size: calc(10px + 1vw);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ruffed {
+    box-sizing: border-box;
+    border: 5px solid red;
+}
+
+.screened {
+    box-sizing: border-box;
+    border: 5px solid blue;
+}
+
+.emupage {
+    box-sizing: border-box;
+    border: 5px solid green;
+}
+
+.newtab {
+    box-sizing: border-box;
+    border: 5px solid orange;
+}
+
+.fonted {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 120%;
 }

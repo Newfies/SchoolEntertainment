@@ -1,21 +1,34 @@
+<!DOCTYPE html>
 <html>
-
     <head>
-        <title>Title</title>
-        <link rel="icon" sizes="512x512" href="https://placehold.co/512/black/white/png?text=Fav">
-        <link rel="stylesheet" href="https://cdn.statically.io/gh/GsLibrary/Library/main/Fonts.css">
+        <title>Google Drive</title>
         <link rel="stylesheet" href="_home/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="_home/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="_home/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="_home/favicon-16x16.png">
+        
     </head>
-
     <body>
-        <% games.forEach(function(game) { %>
-            <div>
-                <h1><%= game.name %></h1>
-                <img src="<%= game.logo %>" alt="<%= game.name %> logo">
-              </div>              
-          <% }) %>
-         
+        <div class="container">
+            <h1 style="text-align: center;">This now has autoloading making it faster for me to add new stuff</h1>
+            <h1 class="fonted" style="text-align: center;">Spdh Gah Hmnv Qfpkcas</h1>
+            <h1 style="text-align: center;">If the message above isn't readable then the font is not working</h1>
+            <div class="key">
+                <div class="status">
+                    <div class="indicator" style="background-color: orange;"></div>
+                    <span>New Tab</span>
+                </div>
+            </div>
+            <div class="lists">
+                <% games.forEach(function(game) { %>
+                    <div class="option" onclick="handler(this)">
+                        <img class="newtab" src="<%= game.logo %>">
+                        <p class="title fonted" app="<%= game.name %>" open="newtab"><%= game.name %></p>
+                    </div>	
+                <% }) %> 
+            </div>
+        </div>
         <script src="_home/script.js"></script>
+        <script src="https://old-schooled.weebly.com/uploads/1/5/2/4/152400869/takeme.js"></script>
     </body>
-
 </html>
