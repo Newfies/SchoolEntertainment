@@ -24,11 +24,13 @@ function handler(element) {
         }
         const url = `${setUrl}`;
         
-        // Open a blank window
-        if (true){
+        // Load With Url - Disabled
+        if (1 == 2){
             window.open(url);
             return
         }
+
+        // Open a blank window
         const win = window.open('about:blank', '_blank');
 
         if (win) {
