@@ -65,8 +65,8 @@ app.get('/home', function(req, res) {
   
           if (config['Loading Configurations']) {
             const game = {
-              name: config['Loading Configurations'].Name || 'Unnamed Option',
-              logo: '/options/' + dir + '/' + config['Loading Configurations'].Logo, // Correct path to the logo file
+              name: dir,
+              logo: '/options/' + dir + '/logo.png'
             };
   
             gamesData.push(game);
